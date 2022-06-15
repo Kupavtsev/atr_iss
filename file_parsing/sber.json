@@ -1,0 +1,127 @@
+{
+"securities": {
+	"metadata": {
+		"SECID": {"type": "string", "bytes": 36, "max_size": 0},
+		"BOARDID": {"type": "string", "bytes": 12, "max_size": 0},
+		"SHORTNAME": {"type": "string", "bytes": 30, "max_size": 0},
+		"PREVPRICE": {"type": "double"},
+		"LOTSIZE": {"type": "int32"},
+		"FACEVALUE": {"type": "double"},
+		"STATUS": {"type": "string", "bytes": 3, "max_size": 0},
+		"BOARDNAME": {"type": "string", "bytes": 381, "max_size": 0},
+		"DECIMALS": {"type": "int32"},
+		"SECNAME": {"type": "string", "bytes": 90, "max_size": 0},
+		"REMARKS": {"type": "string", "bytes": 24, "max_size": 0},
+		"MARKETCODE": {"type": "string", "bytes": 12, "max_size": 0},
+		"INSTRID": {"type": "string", "bytes": 12, "max_size": 0},
+		"SECTORID": {"type": "string", "bytes": 12, "max_size": 0},
+		"MINSTEP": {"type": "double"},
+		"PREVWAPRICE": {"type": "double"},
+		"FACEUNIT": {"type": "string", "bytes": 12, "max_size": 0},
+		"PREVDATE": {"type": "date", "bytes": 10, "max_size": 0},
+		"ISSUESIZE": {"type": "int64"},
+		"ISIN": {"type": "string", "bytes": 36, "max_size": 0},
+		"LATNAME": {"type": "string", "bytes": 90, "max_size": 0},
+		"REGNUMBER": {"type": "string", "bytes": 90, "max_size": 0},
+		"PREVLEGALCLOSEPRICE": {"type": "double"},
+		"PREVADMITTEDQUOTE": {"type": "double"},
+		"CURRENCYID": {"type": "string", "bytes": 12, "max_size": 0},
+		"SECTYPE": {"type": "string", "bytes": 3, "max_size": 0},
+		"LISTLEVEL": {"type": "int32"},
+		"SETTLEDATE": {"type": "date", "bytes": 10, "max_size": 0}
+	},
+	"columns": ["SECID", "BOARDID", "SHORTNAME", "PREVPRICE", "LOTSIZE", "FACEVALUE", "STATUS", "BOARDNAME", "DECIMALS", "SECNAME", "REMARKS", "MARKETCODE", "INSTRID", "SECTORID", "MINSTEP", "PREVWAPRICE", "FACEUNIT", "PREVDATE", "ISSUESIZE", "ISIN", "LATNAME", "REGNUMBER", "PREVLEGALCLOSEPRICE", "PREVADMITTEDQUOTE", "CURRENCYID", "SECTYPE", "LISTLEVEL", "SETTLEDATE"], 
+	"data": [
+		["SBER", "SMAL", "Сбербанк", 119.35, 1, 3, "A", "Т+: Неполные лоты (акции) - безадрес.", 2, "Сбербанк России ПАО ао", null, "FNDT", "EQIN", null, 0.01, 119.87, "SUR", "2022-06-02", 21586948000, "RU0009029540", "Sberbank", "10301481B", null, null, "SUR", "1", 1, "2022-06-07"],
+		["SBER", "SPEQ", "Сбербанк", 131.22, 1, 3, "A", "Поставка по СК (акции)", 2, "Сбербанк России ПАО ао", null, "RPST", "EQIN", null, 0.01, null, "SUR", "2022-06-02", 21586948000, "RU0009029540", "Sberbank", "10301481B", null, null, "SUR", "1", 1, "2022-06-07"],
+		["SBER", "TQBR", "Сбербанк", 119, 10, 3, "A", "Т+: Акции и ДР - безадрес.", 2, "Сбербанк России ПАО ао", null, "FNDT", "EQIN", null, 0.01, 119.87, "SUR", "2022-06-02", 21586948000, "RU0009029540", "Sberbank", "10301481B", 119, 119, "SUR", "1", 1, "2022-06-07"],
+		["SBER", "TQDP", "Сбербанк", null, 10, 3, "A", "Крупные пакеты - Акции - безадрес.", 2, "Сбербанк России ПАО ао", null, "FNDT", "EQIN", null, 0.01, null, "SUR", "2022-06-02", 21586948000, "RU0009029540", "Sberbank", "10301481B", null, null, "SUR", "1", 1, "2022-06-07"]
+	]
+},
+"marketdata": {
+	"metadata": {
+		"SECID": {"type": "string", "bytes": 36, "max_size": 0},
+		"BOARDID": {"type": "string", "bytes": 12, "max_size": 0},
+		"BID": {"type": "double"},
+		"BIDDEPTH": {"type": "undefined", "bytes": 0, "max_size": 0},
+		"OFFER": {"type": "double"},
+		"OFFERDEPTH": {"type": "undefined", "bytes": 0, "max_size": 0},
+		"SPREAD": {"type": "double"},
+		"BIDDEPTHT": {"type": "int32"},
+		"OFFERDEPTHT": {"type": "int32"},
+		"OPEN": {"type": "double"},
+		"LOW": {"type": "double"},
+		"HIGH": {"type": "double"},
+		"LAST": {"type": "double"},
+		"LASTCHANGE": {"type": "double"},
+		"LASTCHANGEPRCNT": {"type": "double"},
+		"QTY": {"type": "int32"},
+		"VALUE": {"type": "double"},
+		"VALUE_USD": {"type": "double"},
+		"WAPRICE": {"type": "double"},
+		"LASTCNGTOLASTWAPRICE": {"type": "double"},
+		"WAPTOPREVWAPRICEPRCNT": {"type": "double"},
+		"WAPTOPREVWAPRICE": {"type": "double"},
+		"CLOSEPRICE": {"type": "double"},
+		"MARKETPRICETODAY": {"type": "double"},
+		"MARKETPRICE": {"type": "double"},
+		"LASTTOPREVPRICE": {"type": "double"},
+		"NUMTRADES": {"type": "int32"},
+		"VOLTODAY": {"type": "int64"},
+		"VALTODAY": {"type": "int64"},
+		"VALTODAY_USD": {"type": "int64"},
+		"ETFSETTLEPRICE": {"type": "double"},
+		"TRADINGSTATUS": {"type": "string", "bytes": 3, "max_size": 0},
+		"UPDATETIME": {"type": "time", "bytes": 10, "max_size": 0},
+		"ADMITTEDQUOTE": {"type": "double"},
+		"LASTBID": {"type": "undefined", "bytes": 0, "max_size": 0},
+		"LASTOFFER": {"type": "undefined", "bytes": 0, "max_size": 0},
+		"LCLOSEPRICE": {"type": "double"},
+		"LCURRENTPRICE": {"type": "double"},
+		"MARKETPRICE2": {"type": "double"},
+		"NUMBIDS": {"type": "undefined", "bytes": 0, "max_size": 0},
+		"NUMOFFERS": {"type": "undefined", "bytes": 0, "max_size": 0},
+		"CHANGE": {"type": "double"},
+		"TIME": {"type": "time", "bytes": 10, "max_size": 0},
+		"HIGHBID": {"type": "undefined", "bytes": 0, "max_size": 0},
+		"LOWOFFER": {"type": "undefined", "bytes": 0, "max_size": 0},
+		"PRICEMINUSPREVWAPRICE": {"type": "double"},
+		"OPENPERIODPRICE": {"type": "double"},
+		"SEQNUM": {"type": "int64"},
+		"SYSTIME": {"type": "datetime", "bytes": 19, "max_size": 0},
+		"CLOSINGAUCTIONPRICE": {"type": "double"},
+		"CLOSINGAUCTIONVOLUME": {"type": "double"},
+		"ISSUECAPITALIZATION": {"type": "double"},
+		"ISSUECAPITALIZATION_UPDATETIME": {"type": "time", "bytes": 10, "max_size": 0},
+		"ETFSETTLECURRENCY": {"type": "string", "bytes": 18, "max_size": 0},
+		"VALTODAY_RUR": {"type": "int64"},
+		"TRADINGSESSION": {"type": "string", "bytes": 3, "max_size": 0}
+	},
+	"columns": ["SECID", "BOARDID", "BID", "BIDDEPTH", "OFFER", "OFFERDEPTH", "SPREAD", "BIDDEPTHT", "OFFERDEPTHT", "OPEN", "LOW", "HIGH", "LAST", "LASTCHANGE", "LASTCHANGEPRCNT", "QTY", "VALUE", "VALUE_USD", "WAPRICE", "LASTCNGTOLASTWAPRICE", "WAPTOPREVWAPRICEPRCNT", "WAPTOPREVWAPRICE", "CLOSEPRICE", "MARKETPRICETODAY", "MARKETPRICE", "LASTTOPREVPRICE", "NUMTRADES", "VOLTODAY", "VALTODAY", "VALTODAY_USD", "ETFSETTLEPRICE", "TRADINGSTATUS", "UPDATETIME", "ADMITTEDQUOTE", "LASTBID", "LASTOFFER", "LCLOSEPRICE", "LCURRENTPRICE", "MARKETPRICE2", "NUMBIDS", "NUMOFFERS", "CHANGE", "TIME", "HIGHBID", "LOWOFFER", "PRICEMINUSPREVWAPRICE", "OPENPERIODPRICE", "SEQNUM", "SYSTIME", "CLOSINGAUCTIONPRICE", "CLOSINGAUCTIONVOLUME", "ISSUECAPITALIZATION", "ISSUECAPITALIZATION_UPDATETIME", "ETFSETTLECURRENCY", "VALTODAY_RUR", "TRADINGSESSION"], 
+	"data": [
+		["SBER", "SMAL", null, null, null, null, 0, 0, 0, 120, 116.78, 123.97, 118.61, 0, 0, 4, 474.44, 7.66, 118.43, 0, -1.2, -1.44, null, null, 119.83, -0.62, 14, 31, 3671, 59, null, "B", "23:50:05", null, null, null, null, null, null, null, null, -0.74, "18:15:57", null, null, -1.26, null, 1192783, "2022-06-05 00:05:00", null, null, 2573380071080, "18:45:59", null, 3671, null],
+		["SBER", "SPEQ", null, null, null, null, 0, 0, 0, null, null, null, null, 0, 0, 0, 0.00, 0, null, 0, 0, 0, null, null, 119.83, 0, 0, 0, 0, 0, null, "B", "19:01:39", null, null, null, null, null, null, null, null, null, "19:01:39", null, null, null, null, 1175100, "2022-06-03 19:16:40", null, null, 2573380071080, "18:45:59", null, 0, null],
+		["SBER", "TQBR", null, null, null, null, 0, 0, 0, 119.29, 117.18, 120.16, 119.21, 0, 0, 1, 1192.10, 19.24, 118.43, 0, -1.2, -1.44, null, 118.43, 119.83, 0.18, 80343, 34341530, 4067212983, 65636309, null, "B", "23:50:05", 119.21, null, null, 119.21, 119.21, 118.43, null, null, 0.21, "18:49:59", null, null, -0.66, 119.29, 1192783, "2022-06-05 00:05:00", 119.21, 97270, 2573380071080, "18:45:59", null, 4067212983, null],
+		["SBER", "TQDP", null, null, null, null, 0, null, null, null, null, null, null, 0, 0, 0, 0.00, 0, null, 0, 0, 0, null, 118.43, 119.83, 0, 0, 0, 0, 0, null, "B", "19:13:25", null, null, null, null, null, null, null, null, null, "19:13:25", null, null, null, null, 1175898, "2022-06-03 19:28:26", null, null, 2573380071080, "18:45:59", null, 0, null]
+	]
+},
+"dataversion": {
+	"metadata": {
+		"data_version": {"type": "int32"},
+		"seqnum": {"type": "int64"}
+	},
+	"columns": ["data_version", "seqnum"], 
+	"data": [
+		[7537, 1176059]
+	]
+},
+"marketdata_yields": {
+	"metadata": {
+		"boardid": {"type": "string", "bytes": 12, "max_size": 0},
+		"secid": {"type": "string", "bytes": 36, "max_size": 0}
+	},
+	"columns": ["boardid", "secid"], 
+	"data": [
+
+	]
+}}
