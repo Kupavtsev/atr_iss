@@ -1,7 +1,7 @@
 from app import db
 
 
-class OHLC(db.Model):
+class OHLC_Model(db.Model):
     __tablename__ = 'ohlc_sber'
 
     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
