@@ -1,6 +1,7 @@
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from datetime import date
 from get_sber import get_ohlc_sber
 
 
@@ -36,13 +37,10 @@ class OHLC_Model(db.Model):
 def handle_ohlc(data = get_ohlc_sber()):
     if request.method == 'GET':
         if bool(data):
-            # print('GET method: ', data)
-            # prev_session = OHLC_Model.query.all()
-            # print('prev_session: ', prev_session.session)
             # We getting prev session record by last ID
-            prev_session = OHLC_Model.query.order_by(OHLC_Model.id.desc()).first().session
-            # print('prev_session: ', prev_session)
-            # print('prev_session: ', prev_session.session)
+            prev_enter = OHLC_Model.query.order_by(OHLC_Model.id.desc()).first()
+            prev_session = prev_enter.session
+            # print('--=prev_session=--: ', type(prev_session.now().date()))
 
             new_session = OHLC_Model(
                 session=data['SYSTIME'],
@@ -54,7 +52,13 @@ def handle_ohlc(data = get_ohlc_sber()):
             )
             
             # We need to delete prev session if its the same as in new request
-            # if prev_session.session
+            last_request = new_session.session[0:10]
+            # print(type(date.fromisoformat(last_request)))
+            if prev_session.now().date() == date.fromisoformat(last_request):
+                db.session.delete(prev_enter)
+                print(True)
+            else:
+                print('Not equal')
             
             print('new_session: ', new_session.session)
             db.session.add(new_session)
